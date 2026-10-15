@@ -6,12 +6,13 @@ int main (void) {
     double num_one;
     double num_two;
     double result;
+    while(1){
     printf("Enter your operation OR S for SQRT, L for logarithm\n");
-    scanf("%c" , &operation);
+    scanf(" %c" , &operation);
     if (operation == '+' || operation == '-' || operation == '*' || operation == '/' || operation == 'S' || operation == 'L') {
      printf(" %c selected.\n", operation);
      printf("Enter first number.\n");
-     scanf("%lf" , & num_one);
+     scanf(" %lf" , & num_one);
         printf("%lf\n" , num_one);
         if (operation == 'S') {
           result = sqrt(num_one);
@@ -22,7 +23,7 @@ int main (void) {
            }
          else  {
                printf("Enter second number.\n");
-     scanf("%lf" , & num_two);
+     scanf(" %lf" , & num_two);
       printf(" %lf\n" , num_two);
            if (operation == '+') {
               result = num_one + num_two;
@@ -50,4 +51,5 @@ int main (void) {
       printf("Invalid.\n");
       return 0;
     }
+  }
   }
